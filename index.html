@@ -9,17 +9,28 @@
 </head>
 <body>
   <header>
-    <h1>Click a cat! Or both ))</h1>
+    <h1>Click a cat!</h1>
   </header>
   <div class="container" id="cats">
     <div class="row">
       <div class="col">
-        <p><span class="catName">Rocket</span>:&nbsp;<span class="clicks">0</span> clicks so far...</P>
-        <img id="rocket" class="cat" src="img/rocket.jpg" alt="Click the flying cat!">
+        <h2>First choose a cat name :)</h2>
+        <ul id="listOfCats"></ul>
+        <button id="admin">Admin</button>
+        <div id="adminFormAndButtons">
+            <form id="adminForm">
+                Cat name: <input type="text" id="nameInForm" value=""><br>
+                Image: <input type="text" id="imageInForm" value=""><br>
+                Clicks: <input type="text" id="clicksInForm" value=""><br>
+            </form>
+            <button id="save">Save</button>
+            <button id="cancel">Cancel</button>
+        </div>
       </div>
       <div class="col">
-        <p><span class="catName">Stalker</span>:&nbsp;<span class="clicks">0</span> clicks so far...</P>
-        <img id="stalker" class="cat" src="img/stalker.jpg" alt="Click the staring cat!">
+        <p><span id="selectedCatName"></span>&nbsp;has
+          <span id="clicks">0</span> clicks so far...</P>
+        <img id="selectedCat" src="">
       </div>
     </div>
   </div>
